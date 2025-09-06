@@ -95,7 +95,7 @@ body {
 /* ===== Ajustes para telas menores (smartphones) ===== */
 @media (max-width: 768px) {
   .icone-item a img {
-    width: 45px;   /* aumenta o tamanho do ícone */
+    width: clamp(40px, 12vw, 80px);   /* aumenta o tamanho do ícone */
     margin-right: 0;
   }
 
@@ -120,5 +120,6 @@ body {
   outline: 2px solid #000;
   outline-offset: 4px;
 }
+
 
 
