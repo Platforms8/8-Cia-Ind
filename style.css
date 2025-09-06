@@ -1,0 +1,92 @@
+/* Importando a fonte Rawline em TTF */
+@font-face {
+  font-family: 'Rawline';
+  src: url('fonts/rawline-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rawline';
+  src: url('fonts/rawline-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Estilo da página */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('tema.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Rawline', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+
+h1 {
+  font-weight: 700; /* vai puxar o Rawline Bold */
+}
+
+.links {
+  margin-top: 50px;
+}
+
+.links a img {
+  width: 80px;
+  margin: 100px;
+  transition: transform 0.2s;
+}
+
+.links a img:hover {
+  transform: scale(0,5.1);
+}
+/* Caixa que agrupa logo + ícones no canto superior direito */
+.topo-direita {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+}
+
+/* Logo no canto superior direito */
+.logo-topo {
+  position: absolute; /* pode ser fixed se quiser que acompanhe a rolagem */
+  top: 525px;
+  right: 10px;
+  width: 500px;
+}
+
+/* Container de ícones (pode ser reposicionado onde quiser) */
+.icones {
+  position: absolute;   /* permite posicionar livremente */
+  top: 700px;           /* distância do topo da página */
+  left: 25px;           /* distância da esquerda */
+}
+
+/* Cada ícone + texto */
+.icone-item {
+  margin: 25px 0;       /* espaço entre os itens */
+}
+
+.icone-item a {
+  display: flex;        /* ícone e texto lado a lado */
+  align-items: center;  /* alinha verticalmente */
+  text-decoration: none;
+  color: black;         /* cor do texto */
+  font-size: 35px;
+}
+
+.icone-item a img {
+  width: 50px;
+  margin-right: 25px;   /* espaço entre ícone e texto */
+  transition: transform 0.2s;
+}
+
+.icone-item a img:hover {
+  transform: scale(1.1);
+}
+
+.icone-item a span {
+  font-weight: 400;
+}
