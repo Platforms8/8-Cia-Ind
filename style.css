@@ -77,7 +77,7 @@ body {
 
 /* Tamanho do ícone responsivo */
 .icone-item a img {
-  width: clamp(32px, 5vw, 56px);         /* 32–56px conforme a tela */
+  width: clamp(45px, 5vw, 56px);         /* 32–56px conforme a tela */
   height: auto;
   transition: transform 0.2s ease;
 }
@@ -115,3 +115,4 @@ body {
   outline: 2px solid #000;
   outline-offset: 4px;
 }
+
