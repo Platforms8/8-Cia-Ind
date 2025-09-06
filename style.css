@@ -94,10 +94,15 @@ body {
 
 /* ===== Ajustes para telas menores (smartphones) ===== */
 @media (max-width: 768px) {
-  /* Em celular, mostrar apenas os ícones, como você pediu */
-  .icone-item a span {
-    display: none;
+  .icone-item a img {
+    width: 45px;   /* aumenta o tamanho do ícone */
+    margin-right: 0;
   }
+
+  .icone-item a span {
+    display: none; /* mantém só o ícone */
+  }
+}
 
   .logo-topo {
     width: min(55vw, 300px);
@@ -115,4 +120,5 @@ body {
   outline: 2px solid #000;
   outline-offset: 4px;
 }
+
 
